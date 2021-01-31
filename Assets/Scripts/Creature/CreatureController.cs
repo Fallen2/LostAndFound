@@ -9,6 +9,12 @@ public class CreatureController : MonoBehaviour
     public List<GameObject> actualPossibleNodes;
     public List<GameObject> allNodes;
     public GameObject actualNode;
+
+    public float WanderSpeed;
+    public float FollowSpeed;
+
+    public float startCheckingPlayerDistance;
+
     public float NodeDetectionRadius;
 
     private NavMeshAgent agent;
@@ -17,8 +23,15 @@ public class CreatureController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //Component Getters
         player = GameObject.FindGameObjectWithTag("Player");
         agent = GetComponent<NavMeshAgent>();
+
+        //AgentSetup
+        agent.speed = WanderSpeed;
+
+
+        //NodeSetup
         GameObject[] nodes = GameObject.FindGameObjectsWithTag("Node");
         foreach (GameObject node in nodes)
         {
@@ -34,6 +47,25 @@ public class CreatureController : MonoBehaviour
         {
             teleport();
         }
+    }
+
+    public bool PlayerOnSight()
+    {
+        RaycastHit hit;
+        Debug.DrawRay(transform.position, player.transform.position - transform.position);
+        if (Physics.Raycast(transform.position, player.transform.position - transform.position, out hit))
+        {
+            if (hit.collider.gameObject.CompareTag("Player"))
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public bool PlayerDistanceChecked()
+    {
+        return (Vector3.Distance(transform.position, player.transform.position) <= startCheckingPlayerDistance);
     }
 
     void teleport()
@@ -55,9 +87,10 @@ public class CreatureController : MonoBehaviour
     }
 
 
-    private void startFollowingPlayer()
+    public void startFollowingPlayer()
     {
- 
+        stopAgent();
+        agent.speed = FollowSpeed;
     }
 
     void addPossibleNodes()

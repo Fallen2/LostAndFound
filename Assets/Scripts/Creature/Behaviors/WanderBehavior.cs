@@ -4,20 +4,32 @@ using UnityEngine;
 
 public class WanderBehavior : StateMachineBehaviour
 {
+
+    CreatureController creatureController;
+
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        //animator.GetComponent<CreatureController>().SelectNextNode();
+        creatureController = animator.GetComponent<CreatureController>();
+        //creatureController.SelectNextNode();
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        if (animator.GetComponent<CreatureController>().actualNode)
+        if (creatureController.actualNode)
         {
-            if (Vector3.Distance(animator.transform.position, animator.GetComponent<CreatureController>().actualNode.transform.position) <= 0.2f)
+            if (Vector3.Distance(animator.transform.position, creatureController.actualNode.transform.position) <= 0.2f)
             {
-                animator.GetComponent<CreatureController>().SelectNextNode();
+                creatureController.SelectNextNode();
+            }
+        }
+
+        if (creatureController.PlayerDistanceChecked())
+        {
+            if (creatureController.PlayerOnSight())
+            {
+                animator.SetTrigger("startFollowing");
             }
         }
     }

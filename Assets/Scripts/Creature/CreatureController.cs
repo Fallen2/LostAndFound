@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using System.Linq;
 
 public class CreatureController : MonoBehaviour
 {
@@ -13,9 +14,12 @@ public class CreatureController : MonoBehaviour
     public float WanderSpeed;
     public float FollowSpeed;
 
+    public bool playerSeen = false;
+
     public float startCheckingPlayerDistance;
 
     public float NodeDetectionRadius;
+    public float AfterFollowNodeDetectionRadius;
 
     private NavMeshAgent agent;
     private GameObject player;
@@ -49,6 +53,7 @@ public class CreatureController : MonoBehaviour
         }
     }
 
+    //Checks if the player can be seen
     public bool PlayerOnSight()
     {
         RaycastHit hit;
@@ -63,6 +68,7 @@ public class CreatureController : MonoBehaviour
         return false;
     }
 
+    //Checks if the player is near enough to start checking if he can be seen
     public bool PlayerDistanceChecked()
     {
         return (Vector3.Distance(transform.position, player.transform.position) <= startCheckingPlayerDistance);
@@ -120,13 +126,6 @@ public class CreatureController : MonoBehaviour
         SelectNextNode();
     }
 
-    private void OnDrawGizmosSelected()
-    {
-     Gizmos.color = Color.red;
-     //Use the same vars you use to draw your Overlap SPhere to draw your Wire Sphere.
-     Gizmos.DrawWireSphere(transform.position, NodeDetectionRadius);
-    }
-
     public void SelectNextNode()
     {
         if (actualNode)
@@ -147,5 +146,28 @@ public class CreatureController : MonoBehaviour
     void newDestination()
     {
         agent.destination = actualNode.transform.position;
+    }
+
+    public void AfterFollowDestination()
+    {
+        Collider[] hitCollidersNear = Physics.OverlapSphere(transform.position, NodeDetectionRadius);
+        Collider[] hitCollidersFar = Physics.OverlapSphere(transform.position, AfterFollowNodeDetectionRadius);
+
+        IEnumerable<Collider> colliderIenumerable = hitCollidersFar.Except<Collider>(hitCollidersNear);
+        Collider[] possibleColliders = colliderIenumerable.ToArray();
+
+        actualNode = possibleColliders[Random.Range(0, possibleColliders.Length)].gameObject;
+        newDestination();
+
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        // Wander Nodes detection sphere
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, NodeDetectionRadius);
+
+        Gizmos.color = Color.blue;
+        Gizmos.DrawWireSphere(transform.position, AfterFollowNodeDetectionRadius);
     }
 }

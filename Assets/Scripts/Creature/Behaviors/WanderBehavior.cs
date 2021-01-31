@@ -11,7 +11,6 @@ public class WanderBehavior : StateMachineBehaviour
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         creatureController = animator.GetComponent<CreatureController>();
-        //creatureController.SelectNextNode();
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks

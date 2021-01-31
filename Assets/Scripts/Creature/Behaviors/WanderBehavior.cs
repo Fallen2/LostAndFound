@@ -11,26 +11,39 @@ public class WanderBehavior : StateMachineBehaviour
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         creatureController = animator.GetComponent<CreatureController>();
+        creatureController.startWandering();
+
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        if (creatureController.actualNode)
+        if (!creatureController.playerSafe)
         {
-            if (Vector3.Distance(animator.transform.position, creatureController.actualNode.transform.position) <= 0.2f)
+            if (creatureController.actualNode)
             {
-                creatureController.SelectNextNode();
+                if (Vector3.Distance(animator.transform.position, creatureController.actualNode.transform.position) <= 0.2f)
+                {
+                    creatureController.SelectNextNode();
+                }
             }
-        }
 
-        if (creatureController.PlayerDistanceChecked())
-        {
-            if (creatureController.PlayerOnSight())
+            if (creatureController.PlayerDistanceChecked() && !creatureController.playerSafe)
             {
-                animator.SetTrigger("startFollowing");
+                if (creatureController.PlayerOnSight())
+                {
+                    animator.SetTrigger("startFollowing");
+                }
             }
         }
+        else
+        {
+            if (!creatureController.PlayerOnSight() && !creatureController.willTeleport)
+            {
+                creatureController.willTeleport = true;
+            }
+        }
+        
     }
 
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state

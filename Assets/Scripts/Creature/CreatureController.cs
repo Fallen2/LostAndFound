@@ -18,8 +18,14 @@ public class CreatureController : MonoBehaviour
 
     public float startCheckingPlayerDistance;
 
+    public bool playerSafe = false;
+
     public float NodeDetectionRadius;
     public float AfterFollowNodeDetectionRadius;
+
+    public bool willTeleport = false;
+    public float timeBeforeTeleportation;
+    private float elapsedTimeBeforeTeleportation = 0;
 
     private NavMeshAgent agent;
     private GameObject player;
@@ -51,6 +57,19 @@ public class CreatureController : MonoBehaviour
         {
             teleport();
         }
+
+        if (willTeleport)
+        {
+            elapsedTimeBeforeTeleportation += Time.deltaTime;
+            if(elapsedTimeBeforeTeleportation >= timeBeforeTeleportation)
+            {
+                playerSafe = false;
+                elapsedTimeBeforeTeleportation = 0;
+                willTeleport = false;
+                teleport();
+            }
+        }
+
     }
 
     //Checks if the player can be seen
@@ -77,7 +96,7 @@ public class CreatureController : MonoBehaviour
     void teleport()
     {
         stopAgent();
-        //transform.position = allNodes[Random.Range(0, allNodes.Count)].transform.position;
+        transform.position = allNodes[Random.Range(0, allNodes.Count)].transform.position;
         addPossibleNodes();
     }
 
@@ -97,6 +116,13 @@ public class CreatureController : MonoBehaviour
     {
         stopAgent();
         agent.speed = FollowSpeed;
+    }
+
+    public void startWandering()
+    {
+        stopAgent();
+        agent.speed = WanderSpeed;
+        newDestination();
     }
 
     void addPossibleNodes()
@@ -150,15 +176,39 @@ public class CreatureController : MonoBehaviour
 
     public void AfterFollowDestination()
     {
+        GetComponent<Animator>().SetTrigger("stopFollowing");
         Collider[] hitCollidersNear = Physics.OverlapSphere(transform.position, NodeDetectionRadius);
         Collider[] hitCollidersFar = Physics.OverlapSphere(transform.position, AfterFollowNodeDetectionRadius);
 
-        IEnumerable<Collider> colliderIenumerable = hitCollidersFar.Except<Collider>(hitCollidersNear);
+        List<Collider> hitCollidersNearNodes = new List<Collider>();
+        List<Collider> hitCollidersFarNodes = new List<Collider>() ;
+
+        foreach (var hitCollider in hitCollidersNear)
+        {
+            if (hitCollider.CompareTag("Node"))
+            {
+                hitCollidersNearNodes.Add(hitCollider);
+            }
+        }
+
+        foreach (var hitCollider in hitCollidersFar)
+        {
+            if (hitCollider.CompareTag("Node"))
+            {
+                hitCollidersFarNodes.Add(hitCollider);
+            }
+        }
+
+        IEnumerable<Collider> colliderIenumerable = hitCollidersFarNodes.Except<Collider>(hitCollidersNearNodes);
         Collider[] possibleColliders = colliderIenumerable.ToArray();
 
         actualNode = possibleColliders[Random.Range(0, possibleColliders.Length)].gameObject;
-        newDestination();
+        
+    }
 
+    public GameObject GetPlayer()
+    {
+        return player;
     }
 
     private void OnDrawGizmosSelected()

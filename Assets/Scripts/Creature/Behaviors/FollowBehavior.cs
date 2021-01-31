@@ -17,16 +17,28 @@ public class FollowBehavior : StateMachineBehaviour
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         creatureController.refreshPlayerPosition();
-        if (creatureController.PlayerOnSight() && !creatureController.playerSeen)
+        if (creatureController.PlayerOnSight() 
+            && !creatureController.playerSeen 
+            && !creatureController.GetPlayer().GetComponent<Player>().isVulnerable() 
+            && !creatureController.playerSafe)
         {
-            
+            creatureController.playerSafe = true;
+            creatureController.AfterFollowDestination();
         }
-        if (creatureController.PlayerOnSight())
+        else
         {
-            creatureController.playerSeen = true;
+            if (creatureController.PlayerOnSight())
+            {
+                creatureController.playerSeen = true;
+            }
+            else
+            {
+                creatureController.playerSeen = false;
+            }
+
         }
 
-
+    }
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state
     //override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     //{

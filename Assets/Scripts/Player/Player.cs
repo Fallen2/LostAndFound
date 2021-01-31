@@ -5,11 +5,20 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     public Transform playerEyes;
+    public Animator playerAnimator;
 
     float detection_distance = 3.5f;
+    bool eyes_covered = false;
+
+    void Start()
+    {
+        playerAnimator = GetComponent<Animator>();
+    }
 
     void Update()
     {
+        CloseHands();
+
         RaycastHit hit;
 
         if(Physics.Raycast(playerEyes.position, playerEyes.forward, out hit, detection_distance))
@@ -21,6 +30,26 @@ public class Player : MonoBehaviour
                 Debug.Log("Interactible");
             }
             Debug.DrawRay(playerEyes.position, playerEyes.forward * hit.distance, Color.yellow);
+        }
+    }
+
+    public bool isVulnerable()
+    {
+        return !eyes_covered;
+    }
+
+    public void CloseHands()
+    {
+        if (Input.GetMouseButton(0))
+        {
+            eyes_covered = true;
+            playerAnimator.SetBool("Cover In", true);
+            playerAnimator.SetFloat("direction", 1f);
+        }
+        else if (Input.GetMouseButtonUp(0))
+        {
+            eyes_covered = false;
+            playerAnimator.SetFloat("direction", -1f);
         }
     }
 }

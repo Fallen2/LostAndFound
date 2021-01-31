@@ -121,6 +121,31 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &70349703 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1988978690018996983, guid: 1a7e899990f62354983a6e8dcdee6f3c,
+    type: 3}
+  m_PrefabInstance: {fileID: 6412221094526211802}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &70349707
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 70349703}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: bbb26ddf47ed0134c8454a9f6a3298ea, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &509394026
 GameObject:
   m_ObjectHideFlags: 0
@@ -668,6 +693,41 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1164098125543269628, guid: 1a7e899990f62354983a6e8dcdee6f3c,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164098125543269628, guid: 1a7e899990f62354983a6e8dcdee6f3c,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 1080
+      objectReference: {fileID: 0}
+    - target: {fileID: 1988978690018996983, guid: 1a7e899990f62354983a6e8dcdee6f3c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6412221093878791081, guid: 1a7e899990f62354983a6e8dcdee6f3c,
+        type: 3}
+      propertyPath: m_TargetEye
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6412221093878791081, guid: 1a7e899990f62354983a6e8dcdee6f3c,
+        type: 3}
+      propertyPath: m_Depth
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6412221093878791081, guid: 1a7e899990f62354983a6e8dcdee6f3c,
+        type: 3}
+      propertyPath: m_NormalizedViewPortRect.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6412221093878791081, guid: 1a7e899990f62354983a6e8dcdee6f3c,
+        type: 3}
+      propertyPath: m_ClearFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6412221095187370314, guid: 1a7e899990f62354983a6e8dcdee6f3c,
         type: 3}
       propertyPath: m_LocalPosition.x

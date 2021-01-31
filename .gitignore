@@ -60,6 +60,21 @@ sysinfo.txt
 *.aab
 *.unitypackage
 
+#WWise gitignore
+.cache/
+*.akd
+*.validationcache
+[Aa]ssets/WwiseSettings.xml
+[Aa]ssets/WwiseSettings.xml.meta
+
+#WWise gitignore
+*.akd
+*.prof
+.cache
+IncrementalSoundBankData.xml
+*.validationcache
+*.wsettings
+
 # Crashlytics generated file
 crashlytics-build.properties
 

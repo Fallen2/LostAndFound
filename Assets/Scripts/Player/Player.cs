@@ -17,7 +17,9 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        CloseHands();
+        //CloseHands();
+
+        CoverEyes();
 
         RaycastHit hit;
 
@@ -36,6 +38,20 @@ public class Player : MonoBehaviour
     public bool isVulnerable()
     {
         return !eyes_covered;
+    }
+
+    public void CoverEyes()
+    {
+        if (Input.GetMouseButton(0))
+        {
+            eyes_covered = true;
+            GetComponentInChildren<CanvasGroup>().alpha = 1f;
+        }
+        else if (Input.GetMouseButtonUp(0))
+        {
+            eyes_covered = false;
+            GetComponentInChildren<CanvasGroup>().alpha = 0f;
+        }
     }
 
     public void CloseHands()

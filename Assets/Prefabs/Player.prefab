@@ -347,7 +347,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 6412221095187370325}
-  speed: 12
+  animator: {fileID: 219092220064951629}
+  acceleration: 12
+  walkSpeed: 2
+  runSpeed: 5
   gravity: -9.81
 --- !u!114 &6412221095187370312
 MonoBehaviour:

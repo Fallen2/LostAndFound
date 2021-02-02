@@ -12,7 +12,7 @@ public class Player : MonoBehaviour
 
     void Start()
     {
-        playerAnimator = GetComponent<Animator>();
+        //playerAnimator = GetComponentInParent<Animator>();
     }
 
     void Update()

@@ -17,7 +17,7 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        CloseHands();
+        CoverEyes();
 
         RaycastHit hit;
 
@@ -38,7 +38,7 @@ public class Player : MonoBehaviour
         return !eyes_covered;
     }
 
-    public void CloseHands()
+    public void CoverEyes()
     {
         if (Input.GetMouseButton(0))
         {
@@ -49,7 +49,22 @@ public class Player : MonoBehaviour
         else if (Input.GetMouseButtonUp(0))
         {
             eyes_covered = false;
+            playerAnimator.SetBool("Cover In", false);
             playerAnimator.SetFloat("direction", -1f);
+        }
+    }
+
+    public void CloseHands()
+    {
+        if (Input.GetMouseButton(0))
+        {
+            eyes_covered = true;
+
+        }
+        else if (Input.GetMouseButtonUp(0))
+        {
+            eyes_covered = false;
+            
         }
     }
 }

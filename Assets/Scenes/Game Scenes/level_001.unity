@@ -3157,12 +3157,12 @@ Transform:
   - {fileID: 1347181829}
   - {fileID: 941999451}
   - {fileID: 1854767763}
-  - {fileID: 870383246}
   - {fileID: 1688695407}
+  - {fileID: 870383246}
   - {fileID: 1985551766}
   - {fileID: 1087644520}
-  - {fileID: 1131522688}
   - {fileID: 148702803}
+  - {fileID: 1131522688}
   - {fileID: 750668460}
   - {fileID: 1152426870}
   - {fileID: 1353662394}
@@ -9510,6 +9510,75 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 761217417}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1508060676
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1713040252}
+    m_Modifications:
+    - target: {fileID: 1056020805368262, guid: 88122e0599125e540833c032bf45166c, type: 3}
+      propertyPath: m_Name
+      value: Hall_Door
+      objectReference: {fileID: 0}
+    - target: {fileID: 1056020805368262, guid: 88122e0599125e540833c032bf45166c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1094900696677202, guid: 88122e0599125e540833c032bf45166c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1464677006883546, guid: 88122e0599125e540833c032bf45166c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4567505414443708, guid: 88122e0599125e540833c032bf45166c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 4567505414443708, guid: 88122e0599125e540833c032bf45166c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4567505414443708, guid: 88122e0599125e540833c032bf45166c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4567505414443708, guid: 88122e0599125e540833c032bf45166c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.000000021855694
+      objectReference: {fileID: 0}
+    - target: {fileID: 4567505414443708, guid: 88122e0599125e540833c032bf45166c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4567505414443708, guid: 88122e0599125e540833c032bf45166c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4567505414443708, guid: 88122e0599125e540833c032bf45166c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4567505414443708, guid: 88122e0599125e540833c032bf45166c, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4567505414443708, guid: 88122e0599125e540833c032bf45166c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4567505414443708, guid: 88122e0599125e540833c032bf45166c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4567505414443708, guid: 88122e0599125e540833c032bf45166c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 88122e0599125e540833c032bf45166c, type: 3}
 --- !u!4 &1516076575 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4414080895957248, guid: 93f861ce27e9aea4b866b8263b479191,
@@ -13788,6 +13857,10 @@ PrefabInstance:
     - target: {fileID: 1057190408356330, guid: 13e33c41566be6641b747cdecf6a13d9, type: 3}
       propertyPath: m_Name
       value: Hall_Room_Doorway_Connector_2x4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1605817972575944, guid: 13e33c41566be6641b747cdecf6a13d9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4893499770652486, guid: 13e33c41566be6641b747cdecf6a13d9, type: 3}
       propertyPath: m_LocalPosition.x

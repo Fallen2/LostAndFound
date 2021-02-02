@@ -7,18 +7,29 @@ public class PlayerMovement : MonoBehaviour
     public CharacterController controller;
     public Animator animator;
 
-    public float acceleration = 1.0f;
+    public Transform groundCheck;
+    public float groundDistance = 0.4f;
+    public LayerMask groundMask;
 
-    public float walkSpeed = 6f;
-    public float runSpeed = 12f;
+    public float acceleration = 12.0f;
+
+    public float walkSpeed = 2f;
+    public float runSpeed = 5f;
     public float gravity = -9.81f;
 
+    private bool isGrounded;
     private float currentSpeed;
 
     Vector3 velocity;
 
     void Update()
     {
+        isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
+        if(isGrounded && velocity.y < 0)
+        {
+            velocity.y = -2f;
+        }
+
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
 

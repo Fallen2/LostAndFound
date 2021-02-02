@@ -12,14 +12,474 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97597bf93041f5743853deefa2ffcf2c, type: 3}
   m_Name: AkWwiseProjectData
   m_EditorClassIdentifier: 
-  AcousticTextureWwu: []
-  AuxBusWwu: []
-  BankWwu: []
-  EventWwu: []
-  RtpcWwu: []
-  StateWwu: []
-  SwitchWwu: []
-  TriggerWwu: []
-  ExpandedItems: []
+  AcousticTextureWwu:
+  - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: dafbbfff90edda4a9f3c779460710f2d
+    GuidInternal: 
+    m_lastTime: -8585895144063006842
+    List: []
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: 83a12d9dfa38a242b53882113045825c
+    GuidInternal: 
+    m_lastTime: -8585893181746074721
+    List:
+    - name: Ambiance
+      guid: a4e9acc6d501cb40b889d0a601b06265
+      id: 2981377429
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: Ambiance
+        ObjectType: 2
+      Path: Default Work Unit\Master Audio Bus\Ambiance
+    - name: Interact
+      guid: 2b1600948ff62c458194b328ef22a011
+      id: 1466384055
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: SFX
+        ObjectType: 2
+      - ElementName: Interact
+        ObjectType: 2
+      Path: Default Work Unit\Master Audio Bus\SFX\Interact
+    - name: Master Audio Bus
+      guid: d8a41415a61d2a41a17e75ca0c2149f3
+      id: 3803692087
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      Path: Default Work Unit\Master Audio Bus
+    - name: Medium_Verb
+      guid: fbe08c013043a64693f7bbec2a53e97c
+      id: 3055128616
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: Reverbs
+        ObjectType: 2
+      - ElementName: Medium_Verb
+        ObjectType: 1
+      Path: Default Work Unit\Master Audio Bus\Reverbs\Medium_Verb
+    - name: Monster
+      guid: 8f2962de8061734ab32e0fe30194869f
+      id: 2376328173
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: SFX
+        ObjectType: 2
+      - ElementName: Monster
+        ObjectType: 2
+      Path: Default Work Unit\Master Audio Bus\SFX\Monster
+    - name: Music
+      guid: 0c709d02b400e642adc0b44062cf9f73
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: Music
+        ObjectType: 2
+      Path: Default Work Unit\Master Audio Bus\Music
+    - name: Player
+      guid: 60dab91c50851f4ba3d37a47458fcad6
+      id: 1069431850
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: SFX
+        ObjectType: 2
+      - ElementName: Player
+        ObjectType: 2
+      Path: Default Work Unit\Master Audio Bus\SFX\Player
+    - name: Reverbs
+      guid: b19a0d3c54c3424385b3b546268395ce
+      id: 3545700988
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: Reverbs
+        ObjectType: 2
+      Path: Default Work Unit\Master Audio Bus\Reverbs
+    - name: SFX
+      guid: 58e749b01991034ea3c47223f05ff7cc
+      id: 393239870
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: SFX
+        ObjectType: 2
+      Path: Default Work Unit\Master Audio Bus\SFX
+    - name: Small_Verb
+      guid: c4e0655a2a894245ab62651e2efb6d60
+      id: 3252130918
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: Reverbs
+        ObjectType: 2
+      - ElementName: Small_Verb
+        ObjectType: 1
+      Path: Default Work Unit\Master Audio Bus\Reverbs\Small_Verb
+  BankWwu:
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: 110da003a470b34ebeff6626cd49bcec
+    GuidInternal: 
+    m_lastTime: -8585894053228506573
+    List:
+    - name: Main
+      guid: 485da92c0487a840bd4a0d327d53ed63
+      id: 3161908922
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Main
+        ObjectType: 7
+      Path: Default Work Unit\Main
+  EventWwu:
+  - PhysicalPath: Events\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: 7b45afd786dab245ab9029ad99ebdd64
+    GuidInternal: 
+    m_lastTime: -8585893109127283753
+    List:
+    - name: Ambiance
+      guid: 7084788bd323e443ac03e987a10c78f9
+      id: 2981377429
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Ambiance
+        ObjectType: 4
+      Path: Default Work Unit\Ambiance
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Character
+      guid: e5c970a15fd432408ee4b59521100523
+      id: 436743010
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Character
+        ObjectType: 4
+      Path: Default Work Unit\Character
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Interact
+      guid: 799d74f29f32ec4484397be9bd01240c
+      id: 1466384055
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Interact
+        ObjectType: 4
+      Path: Default Work Unit\Interact
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Monster
+      guid: c3c015c2719f444e8e0accb306fd006a
+      id: 2376328173
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Monster
+        ObjectType: 4
+      Path: Default Work Unit\Monster
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Breath
+      guid: f60fccaa66307a46b384bb6f16787c7a
+      id: 3698047240
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Character
+        ObjectType: 4
+      - ElementName: Play_Breath
+        ObjectType: 3
+      Path: Default Work Unit\Character\Play_Breath
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Door
+      guid: 7a1a59917b8a7946a747a12c6b6d3b31
+      id: 2547633870
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Interact
+        ObjectType: 4
+      - ElementName: Play_Door
+        ObjectType: 3
+      Path: Default Work Unit\Interact\Play_Door
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Footsteps_Run
+      guid: 3d5d8208a41e3b4c9015d84d39ce2663
+      id: 2983625421
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Character
+        ObjectType: 4
+      - ElementName: Play_Footsteps_Run
+        ObjectType: 3
+      Path: Default Work Unit\Character\Play_Footsteps_Run
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Footsteps_Walk
+      guid: fed5edf7268494429d458ff04a3fb34a
+      id: 2618673757
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Character
+        ObjectType: 4
+      - ElementName: Play_Footsteps_Walk
+        ObjectType: 3
+      Path: Default Work Unit\Character\Play_Footsteps_Walk
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Room_Tones
+      guid: 789116a80bb65041b16604c4405c3392
+      id: 1501818189
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Ambiance
+        ObjectType: 4
+      - ElementName: Play_Room_Tones
+        ObjectType: 3
+      Path: Default Work Unit\Ambiance\Play_Room_Tones
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Screams
+      guid: 9bf9c4bddda1ff4bbfef4666da88d7e0
+      id: 2700195184
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Monster
+        ObjectType: 4
+      - ElementName: Play_Screams
+        ObjectType: 3
+      Path: Default Work Unit\Monster\Play_Screams
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+  RtpcWwu:
+  - PhysicalPath: Game Parameters\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: dd58ab2546838f4f862e6d9ad7653a61
+    GuidInternal: 
+    m_lastTime: -8585893103455376301
+    List:
+    - name: Player_Speed
+      guid: c55d2f8208027140ab93354dffedf9cd
+      id: 1062779386
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Player_Speed
+        ObjectType: 13
+      Path: Default Work Unit\Player_Speed
+    - name: Stress_Intensity
+      guid: 48d4b807390f07478efced92fe347184
+      id: 1289058627
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Stress_Intensity
+        ObjectType: 13
+      Path: Default Work Unit\Stress_Intensity
+  StateWwu:
+  - PhysicalPath: States\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: 16dc5f1804f2c045b7227a504cd3c6b9
+    GuidInternal: 
+    m_lastTime: -8585893108889358981
+    List:
+    - name: Player
+      guid: 958d26e09750264f806f2ae06a062b29
+      id: 1069431850
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Player
+        ObjectType: 9
+      Path: Default Work Unit\Player
+      values:
+      - name: Idle
+        guid: d17b1194cd1d34498d65b65112d2edb7
+        id: 1874288895
+        PathAndIcons:
+        - ElementName: Idle
+          ObjectType: 8
+      - name: None
+        guid: 642e359c2c71fe449dc1dd04df9362f8
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: Spotted
+        guid: 2d8bd5ace6f67f40814c9ab2125222d5
+        id: 3214304800
+        PathAndIcons:
+        - ElementName: Spotted
+          ObjectType: 8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: Player_Eyes
+      guid: 80ba5d9684f980459af419886b5beb94
+      id: 4229160191
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Player_Eyes
+        ObjectType: 9
+      Path: Default Work Unit\Player_Eyes
+      values:
+      - name: Closed
+        guid: 3a1617b2f2895244a43846bd7bf6f2cb
+        id: 3012222945
+        PathAndIcons:
+        - ElementName: Closed
+          ObjectType: 8
+      - name: None
+        guid: e30410c14b106f43b62e86c4696583ef
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+  SwitchWwu:
+  - PhysicalPath: Switches\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: 0295ed80c830e84eb4fc293e194bac3b
+    GuidInternal: 
+    m_lastTime: -8585894914332709237
+    List:
+    - name: Door
+      guid: c77f16daad515e4eb25dd14cb592f98c
+      id: 1877847629
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Door
+        ObjectType: 11
+      Path: Default Work Unit\Door
+      values:
+      - name: Close
+        guid: 1f13010515083f48ad0f57397658bdfd
+        id: 1451272583
+        PathAndIcons:
+        - ElementName: Close
+          ObjectType: 10
+      - name: Open
+        guid: 2eec0a496f63af4abbe7d38abbfeddb1
+        id: 3072142513
+        PathAndIcons:
+        - ElementName: Open
+          ObjectType: 10
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: Floor_Texture
+      guid: d7189d9e7d8b2144808c615580a0d58c
+      id: 1880793925
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Floor_Texture
+        ObjectType: 11
+      Path: Default Work Unit\Floor_Texture
+      values:
+      - name: Carpet
+        guid: 581aa46780b0174d98ee7a7af0f72506
+        id: 2412606308
+        PathAndIcons:
+        - ElementName: Carpet
+          ObjectType: 10
+      - name: Wood
+        guid: fd14678a01058d46a8971d453c4bc5d2
+        id: 2058049674
+        PathAndIcons:
+        - ElementName: Wood
+          ObjectType: 10
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+  TriggerWwu:
+  - PhysicalPath: Triggers\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: f61eae9a9f55874aaa6a98c41d713f25
+    GuidInternal: 
+    m_lastTime: -8585895144063256179
+    List: []
+  ExpandedItems:
+  - /Global_GameJam
+  - /Global_GameJam/Events
+  - /Global_GameJam/Events/Default Work Unit
+  - /Global_GameJam/Events/Default Work Unit/Ambiance
+  - /Global_GameJam/Events/Default Work Unit/Character
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

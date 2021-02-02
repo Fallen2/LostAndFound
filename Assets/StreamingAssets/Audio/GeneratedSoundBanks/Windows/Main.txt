@@ -1,0 +1,116 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1501818189	Play_Room_Tones			\Default Work Unit\Ambiance\Play_Room_Tones	
+	2547633870	Play_Door			\Default Work Unit\Interact\Play_Door	
+	2618673757	Play_Footsteps_Walk			\Default Work Unit\Character\Play_Footsteps_Walk	
+	2700195184	Play_Screams			\Default Work Unit\Monster\Play_Screams	
+	2983625421	Play_Footsteps_Run			\Default Work Unit\Character\Play_Footsteps_Run	
+	3698047240	Play_Breath			\Default Work Unit\Character\Play_Breath	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	1877847629	Door			\Default Work Unit\Door	
+	1880793925	Floor_Texture			\Default Work Unit\Floor_Texture	
+
+Switch	ID	Name	Switch Group			Notes
+	1451272583	Close	Door			
+	3072142513	Open	Door			
+	2058049674	Wood	Floor_Texture			
+	2412606308	Carpet	Floor_Texture			
+
+State Group	ID	Name			Wwise Object Path	Notes
+	1069431850	Player			\Default Work Unit\Player	
+
+State	ID	Name	State Group			Notes
+	748895195	None	Player			
+	1874288895	Idle	Player			
+	3214304800	Spotted	Player			
+
+Custom State	ID	Name	State Group	Owner		Notes
+	284041805	Idle	Player	\Actor-Mixer Hierarchy\Global_GameJam\Character\Breath\Heartbeats_seq		
+	292728733	Spotted	Player	\Actor-Mixer Hierarchy\Global_GameJam\Character\Breath\Idle		
+	303626085	Idle	Player	\Actor-Mixer Hierarchy\Global_GameJam\Monster\Vocalizations\Screams\Spotted		
+	318788067	Spotted	Player	\Actor-Mixer Hierarchy\Global_GameJam\Monster\Vocalizations\Screams\Idle		
+	617047644	Idle	Player	\Actor-Mixer Hierarchy\Global_GameJam\Character\Breath\stereo_effect\Breath_Stress_lp_calm		
+	667644131	Idle	Player	\Actor-Mixer Hierarchy\Global_GameJam\Character\Breath\stereo_effect		
+	810831884	Idle	Player	\Actor-Mixer Hierarchy\Global_GameJam\Character\Breath\stereo_effect\Breath_Stress_lp		
+	958733849	Spotted	Player	\Actor-Mixer Hierarchy\Global_GameJam\Character\Breath\Idle\Breath_Idle_lp		
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	1062779386	Player_Speed			\Default Work Unit\Player_Speed	
+	1289058627	Stress_Intensity			\Default Work Unit\Stress_Intensity	
+
+Effect plug-ins	ID	Name	Type				Notes
+	72160435	Wwise_Time_Stretch_(Custom)	Wwise Time Stretch			
+	900693427	Wwise_Time_Stretch_(Custom)	Wwise Time Stretch			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	2627760	Room_Tone_A_02	D:\Enjmin\Projets\GlobalGame Jam\Repo_Wwise\Global_GameJam\.cache\Windows\SFX\Ambiance_lp_6D419472.wem		\Actor-Mixer Hierarchy\Global_GameJam\Ambiance\Room_Tones\Room_Tone_A_lp\Room_Tone_A_02		7250036
+	8552677	Footsteps_Walk_Wood-001	D:\Enjmin\Projets\GlobalGame Jam\Repo_Wwise\Global_GameJam\.cache\Windows\SFX\Footsteps_Walk_Wood-001_10C4C929.wem		\Actor-Mixer Hierarchy\Global_GameJam\Character\Footsteps\Footsteps_Walk\Walk_Wood\Footsteps_Walk_Wood-001		96064
+	9620038	Footsteps_Walk_Wood-007	D:\Enjmin\Projets\GlobalGame Jam\Repo_Wwise\Global_GameJam\.cache\Windows\SFX\Footsteps_Walk_Wood-007_10C4C929.wem		\Actor-Mixer Hierarchy\Global_GameJam\Character\Footsteps\Footsteps_Walk\Walk_Wood\Footsteps_Walk_Wood-007		96064
+	23883776	Monster_Idle_Tone_02	D:\Enjmin\Projets\GlobalGame Jam\Repo_Wwise\Global_GameJam\.cache\Windows\SFX\Monster_Idle_Tone_A98017A4.wem		\Actor-Mixer Hierarchy\Global_GameJam\Monster\Vocalizations\Screams\Idle\Tone\Monster_Idle_Tone_02		1251024
+	25758876	Door_Close_B-002	D:\Enjmin\Projets\GlobalGame Jam\Repo_Wwise\Global_GameJam\.cache\Windows\SFX\Door_Close_B-002_10C4C929.wem		\Actor-Mixer Hierarchy\Global_GameJam\Interact\Door\DoorB\Close\Door_Close_B-002		236400
+	28183169	Monster_Idle_Rnd-004	D:\Enjmin\Projets\GlobalGame Jam\Repo_Wwise\Global_GameJam\.cache\Windows\SFX\Monster_Idle_Rnd-004_10C4C929.wem		\Actor-Mixer Hierarchy\Global_GameJam\Monster\Vocalizations\Screams\Idle\Screams_Rnd\Monster_Idle_Rnd-004		252570
+	49869655	Footsteps_Walk_Carpet-002	D:\Enjmin\Projets\GlobalGame Jam\Repo_Wwise\Global_GameJam\.cache\Windows\SFX\Footsteps_Walk_Carpet-002_10C4C929.wem		\Actor-Mixer Hierarchy\Global_GameJam\Character\Footsteps\Footsteps_Walk\Walk_Carpet\Footsteps_Walk_Carpet-002		96064
+	49964382	Footsteps_Walk_Wood-003	D:\Enjmin\Projets\GlobalGame Jam\Repo_Wwise\Global_GameJam\.cache\Windows\SFX\Footsteps_Walk_Wood-003_10C4C929.wem		\Actor-Mixer Hierarchy\Global_GameJam\Character\Footsteps\Footsteps_Walk\Walk_Wood\Footsteps_Walk_Wood-003		96064
+	85314224	Door_Close_A-002	D:\Enjmin\Projets\GlobalGame Jam\Repo_Wwise\Global_GameJam\.cache\Windows\SFX\Door_Close_A-002_10C4C929.wem		\Actor-Mixer Hierarchy\Global_GameJam\Interact\Door\DoorA\Close\Door_Close_A-002		165152
+	103220578	Breath_Idle_lp	D:\Enjmin\Projets\GlobalGame Jam\Repo_Wwise\Global_GameJam\.cache\Windows\SFX\Breath_Idle_lp_D79FB2B7.wem		\Actor-Mixer Hierarchy\Global_GameJam\Character\Breath\Idle\Breath_Idle_lp		3946340
+	118978957	Footsteps_Run_Carpet-006	D:\Enjmin\Projets\GlobalGame Jam\Repo_Wwise\Global_GameJam\.cache\Windows\SFX\Footsteps_Run_Carpet-006_10C4C929.wem		\Actor-Mixer Hierarchy\Global_GameJam\Character\Footsteps\Footsteps_Run\Run_Carpet\Footsteps_Run_Carpet-006		48064
+	156516463	Footsteps_Walk_Carpet-008	D:\Enjmin\Projets\GlobalGame Jam\Repo_Wwise\Global_GameJam\.cache\Windows\SFX\Footsteps_Walk_Carpet-008_10C4C929.wem		\Actor-Mixer Hierarchy\Global_GameJam\Character\Footsteps\Footsteps_Walk\Walk_Carpet\Footsteps_Walk_Carpet-008		96064
+	174440118	Footsteps_Walk_Carpet-007	D:\Enjmin\Projets\GlobalGame Jam\Repo_Wwise\Global_GameJam\.cache\Windows\SFX\Footsteps_Walk_Carpet-007_10C4C929.wem		\Actor-Mixer Hierarchy\Global_GameJam\Character\Footsteps\Footsteps_Walk\Walk_Carpet\Footsteps_Walk_Carpet-007		96064
+	210931364	Monster_Idle_Tone_01	D:\Enjmin\Projets\GlobalGame Jam\Repo_Wwise\Global_GameJam\.cache\Windows\SFX\Monster_Idle_Tone_695C4FC8.wem		\Actor-Mixer Hierarchy\Global_GameJam\Monster\Vocalizations\Screams\Idle\Tone\Monster_Idle_Tone_01		1185498
+	234849400	Monster_Idle_Tone	D:\Enjmin\Projets\GlobalGame Jam\Repo_Wwise\Global_GameJam\.cache\Windows\SFX\Monster_Idle_Tone_616FD066.wem		\Actor-Mixer Hierarchy\Global_GameJam\Monster\Vocalizations\Screams\Idle\Tone\Monster_Idle_Tone		1048488
+	252897411	Footsteps_Run_Carpet-004	D:\Enjmin\Projets\GlobalGame Jam\Repo_Wwise\Global_GameJam\.cache\Windows\SFX\Footsteps_Run_Carpet-004_10C4C929.wem		\Actor-Mixer Hierarchy\Global_GameJam\Character\Footsteps\Footsteps_Run\Run_Carpet\Footsteps_Run_Carpet-004		48064
+	261017651	Breath_Stress_lp	D:\Enjmin\Projets\GlobalGame Jam\Repo_Wwise\Global_GameJam\.cache\Windows\SFX\Breath_Stress_lp_43B40C3C.wem		\Actor-Mixer Hierarchy\Global_GameJam\Character\Breath\stereo_effect\Breath_Stress_lp		4067852
+	277813619	Door_Open_B-001	D:\Enjmin\Projets\GlobalGame Jam\Repo_Wwise\Global_GameJam\.cache\Windows\SFX\Door_Open_B-001_10C4C929.wem		\Actor-Mixer Hierarchy\Global_GameJam\Interact\Door\DoorB\Open\Door_Open_B-001		147460
+	292745118	Door_Close_A-001	D:\Enjmin\Projets\GlobalGame Jam\Repo_Wwise\Global_GameJam\.cache\Windows\SFX\Door_Close_A-001_10C4C929.wem		\Actor-Mixer Hierarchy\Global_GameJam\Interact\Door\DoorA\Close\Door_Close_A-001		194496
+	339511823	Room_Tone_A_03	D:\Enjmin\Projets\GlobalGame Jam\Repo_Wwise\Global_GameJam\.cache\Windows\SFX\Ambiance_lp_ECED9E55.wem		\Actor-Mixer Hierarchy\Global_GameJam\Ambiance\Room_Tones\Room_Tone_A_lp\Room_Tone_A_03		3121164
+	356322556	Footsteps_Run_Wood-008	D:\Enjmin\Projets\GlobalGame Jam\Repo_Wwise\Global_GameJam\.cache\Windows\SFX\Footsteps_Run_Wood-008_10C4C929.wem		\Actor-Mixer Hierarchy\Global_GameJam\Character\Footsteps\Footsteps_Run\Run_Wood\Footsteps_Run_Wood-008		67264
+	381611552	Ambiance_Noise_Rnd-006	D:\Enjmin\Projets\GlobalGame Jam\Repo_Wwise\Global_GameJam\.cache\Windows\SFX\Ambiance_Noise_Rnd-006_10C4C929.wem		\Actor-Mixer Hierarchy\Global_GameJam\Ambiance\Room_Tones\Noises\Ambiance_Noise_Rnd-006		473000
+	421334643	Footsteps_Run_Carpet-001	D:\Enjmin\Projets\GlobalGame Jam\Repo_Wwise\Global_GameJam\.cache\Windows\SFX\Footsteps_Run_Carpet-001_10C4C929.wem		\Actor-Mixer Hierarchy\Global_GameJam\Character\Footsteps\Footsteps_Run\Run_Carpet\Footsteps_Run_Carpet-001		48064
+	460632793	Footsteps_Walk_Carpet-001	D:\Enjmin\Projets\GlobalGame Jam\Repo_Wwise\Global_GameJam\.cache\Windows\SFX\Footsteps_Walk_Carpet-001_10C4C929.wem		\Actor-Mixer Hierarchy\Global_GameJam\Character\Footsteps\Footsteps_Walk\Walk_Carpet\Footsteps_Walk_Carpet-001		96064
+	478997197	Ambiance_Noise_Rnd-008	D:\Enjmin\Projets\GlobalGame Jam\Repo_Wwise\Global_GameJam\.cache\Windows\SFX\Ambiance_Noise_Rnd-008_10C4C929.wem		\Actor-Mixer Hierarchy\Global_GameJam\Ambiance\Room_Tones\Noises\Ambiance_Noise_Rnd-008		348688
+	508078762	Ambiance_Noise_Rnd-013	D:\Enjmin\Projets\GlobalGame Jam\Repo_Wwise\Global_GameJam\.cache\Windows\SFX\Ambiance_Noise_Rnd-013_10C4C929.wem		\Actor-Mixer Hierarchy\Global_GameJam\Ambiance\Room_Tones\Noises\Ambiance_Noise_Rnd-013		458392
+	510763140	Footsteps_Walk_Carpet-006	D:\Enjmin\Projets\GlobalGame Jam\Repo_Wwise\Global_GameJam\.cache\Windows\SFX\Footsteps_Walk_Carpet-006_10C4C929.wem		\Actor-Mixer Hierarchy\Global_GameJam\Character\Footsteps\Footsteps_Walk\Walk_Carpet\Footsteps_Walk_Carpet-006		96064
+	510792981	Ambiance_Noise_Rnd-003	D:\Enjmin\Projets\GlobalGame Jam\Repo_Wwise\Global_GameJam\.cache\Windows\SFX\Ambiance_Noise_Rnd-003_10C4C929.wem		\Actor-Mixer Hierarchy\Global_GameJam\Ambiance\Room_Tones\Noises\Ambiance_Noise_Rnd-003		521648
+	514792566	Ambiance_Noise_Rnd-007	D:\Enjmin\Projets\GlobalGame Jam\Repo_Wwise\Global_GameJam\.cache\Windows\SFX\Ambiance_Noise_Rnd-007_10C4C929.wem		\Actor-Mixer Hierarchy\Global_GameJam\Ambiance\Room_Tones\Noises\Ambiance_Noise_Rnd-007		210860
+	527323468	Monster_Idle_Rnd-001	D:\Enjmin\Projets\GlobalGame Jam\Repo_Wwise\Global_GameJam\.cache\Windows\SFX\Monster_Idle_Rnd-001_10C4C929.wem		\Actor-Mixer Hierarchy\Global_GameJam\Monster\Vocalizations\Screams\Idle\Screams_Rnd\Monster_Idle_Rnd-001		251254
+	529174030	Footsteps_Walk_Wood-004	D:\Enjmin\Projets\GlobalGame Jam\Repo_Wwise\Global_GameJam\.cache\Windows\SFX\Footsteps_Walk_Wood-004_10C4C929.wem		\Actor-Mixer Hierarchy\Global_GameJam\Character\Footsteps\Footsteps_Walk\Walk_Wood\Footsteps_Walk_Wood-004		96064
+	541802290	Footsteps_Run_Carpet-002	D:\Enjmin\Projets\GlobalGame Jam\Repo_Wwise\Global_GameJam\.cache\Windows\SFX\Footsteps_Run_Carpet-002_10C4C929.wem		\Actor-Mixer Hierarchy\Global_GameJam\Character\Footsteps\Footsteps_Run\Run_Carpet\Footsteps_Run_Carpet-002		48064
+	573394928	Ambiance_Noise_Rnd-012	D:\Enjmin\Projets\GlobalGame Jam\Repo_Wwise\Global_GameJam\.cache\Windows\SFX\Ambiance_Noise_Rnd-012_10C4C929.wem		\Actor-Mixer Hierarchy\Global_GameJam\Ambiance\Room_Tones\Noises\Ambiance_Noise_Rnd-012		467596
+	573406383	Ambiance_Noise_Rnd-009	D:\Enjmin\Projets\GlobalGame Jam\Repo_Wwise\Global_GameJam\.cache\Windows\SFX\Ambiance_Noise_Rnd-009_10C4C929.wem		\Actor-Mixer Hierarchy\Global_GameJam\Ambiance\Room_Tones\Noises\Ambiance_Noise_Rnd-009		454084
+	585264217	Footsteps_Run_Carpet-007	D:\Enjmin\Projets\GlobalGame Jam\Repo_Wwise\Global_GameJam\.cache\Windows\SFX\Footsteps_Run_Carpet-007_10C4C929.wem		\Actor-Mixer Hierarchy\Global_GameJam\Character\Footsteps\Footsteps_Run\Run_Carpet\Footsteps_Run_Carpet-007		48064
+	602975569	Footsteps_Run_Wood-007	D:\Enjmin\Projets\GlobalGame Jam\Repo_Wwise\Global_GameJam\.cache\Windows\SFX\Footsteps_Run_Wood-007_10C4C929.wem		\Actor-Mixer Hierarchy\Global_GameJam\Character\Footsteps\Footsteps_Run\Run_Wood\Footsteps_Run_Wood-007		67264
+	610153961	Room_Tone_A_01	D:\Enjmin\Projets\GlobalGame Jam\Repo_Wwise\Global_GameJam\.cache\Windows\SFX\Ambiance_lp_96672C1F.wem		\Actor-Mixer Hierarchy\Global_GameJam\Ambiance\Room_Tones\Room_Tone_A_lp\Room_Tone_A_01		5750108
+	612764574	Ambiance_Noise_Rnd-005	D:\Enjmin\Projets\GlobalGame Jam\Repo_Wwise\Global_GameJam\.cache\Windows\SFX\Ambiance_Noise_Rnd-005_10C4C929.wem		\Actor-Mixer Hierarchy\Global_GameJam\Ambiance\Room_Tones\Noises\Ambiance_Noise_Rnd-005		502572
+	636029296	Footsteps_Walk_Carpet-005	D:\Enjmin\Projets\GlobalGame Jam\Repo_Wwise\Global_GameJam\.cache\Windows\SFX\Footsteps_Walk_Carpet-005_10C4C929.wem		\Actor-Mixer Hierarchy\Global_GameJam\Character\Footsteps\Footsteps_Walk\Walk_Carpet\Footsteps_Walk_Carpet-005		96064
+	654907565	Footsteps_Walk_Carpet-003	D:\Enjmin\Projets\GlobalGame Jam\Repo_Wwise\Global_GameJam\.cache\Windows\SFX\Footsteps_Walk_Carpet-003_10C4C929.wem		\Actor-Mixer Hierarchy\Global_GameJam\Character\Footsteps\Footsteps_Walk\Walk_Carpet\Footsteps_Walk_Carpet-003		96064
+	669464405	Footsteps_Walk_Carpet-004	D:\Enjmin\Projets\GlobalGame Jam\Repo_Wwise\Global_GameJam\.cache\Windows\SFX\Footsteps_Walk_Carpet-004_10C4C929.wem		\Actor-Mixer Hierarchy\Global_GameJam\Character\Footsteps\Footsteps_Walk\Walk_Carpet\Footsteps_Walk_Carpet-004		96064
+	675517028	Ambiance_Noise_Rnd-014	D:\Enjmin\Projets\GlobalGame Jam\Repo_Wwise\Global_GameJam\.cache\Windows\SFX\Ambiance_Noise_Rnd-014_10C4C929.wem		\Actor-Mixer Hierarchy\Global_GameJam\Ambiance\Room_Tones\Noises\Ambiance_Noise_Rnd-014		777064
+	677740306	Footsteps_Run_Wood-004	D:\Enjmin\Projets\GlobalGame Jam\Repo_Wwise\Global_GameJam\.cache\Windows\SFX\Footsteps_Run_Wood-004_10C4C929.wem		\Actor-Mixer Hierarchy\Global_GameJam\Character\Footsteps\Footsteps_Run\Run_Wood\Footsteps_Run_Wood-004		67264
+	688439534	Monster_Spotted_seq	D:\Enjmin\Projets\GlobalGame Jam\Repo_Wwise\Global_GameJam\.cache\Windows\SFX\Monster_Spotted_seq_A3136DA4.wem		\Actor-Mixer Hierarchy\Global_GameJam\Monster\Vocalizations\Screams\Spotted\Scream\Monster_Spotted_seq		576064
+	732469468	Footsteps_Run_Carpet-003	D:\Enjmin\Projets\GlobalGame Jam\Repo_Wwise\Global_GameJam\.cache\Windows\SFX\Footsteps_Run_Carpet-003_10C4C929.wem		\Actor-Mixer Hierarchy\Global_GameJam\Character\Footsteps\Footsteps_Run\Run_Carpet\Footsteps_Run_Carpet-003		48064
+	750573075	Footsteps_Run_Wood-006	D:\Enjmin\Projets\GlobalGame Jam\Repo_Wwise\Global_GameJam\.cache\Windows\SFX\Footsteps_Run_Wood-006_10C4C929.wem		\Actor-Mixer Hierarchy\Global_GameJam\Character\Footsteps\Footsteps_Run\Run_Wood\Footsteps_Run_Wood-006		67264
+	755982431	Door_Open_A-002	D:\Enjmin\Projets\GlobalGame Jam\Repo_Wwise\Global_GameJam\.cache\Windows\SFX\Door_Open_A-002_10C4C929.wem		\Actor-Mixer Hierarchy\Global_GameJam\Interact\Door\DoorA\Open\Door_Open_A-002		182740
+	756749257	Room_Tone_A	D:\Enjmin\Projets\GlobalGame Jam\Repo_Wwise\Global_GameJam\.cache\Windows\SFX\Ambiance_lp_0C07911E.wem		\Actor-Mixer Hierarchy\Global_GameJam\Ambiance\Room_Tones\Room_Tone_A_lp\Room_Tone_A		6954632
+	758652609	Monster_Idle_Rnd-002	D:\Enjmin\Projets\GlobalGame Jam\Repo_Wwise\Global_GameJam\.cache\Windows\SFX\Monster_Idle_Rnd-002_10C4C929.wem		\Actor-Mixer Hierarchy\Global_GameJam\Monster\Vocalizations\Screams\Idle\Screams_Rnd\Monster_Idle_Rnd-002		270430
+	779924430	Ambiance_Noise_Rnd-011	D:\Enjmin\Projets\GlobalGame Jam\Repo_Wwise\Global_GameJam\.cache\Windows\SFX\Ambiance_Noise_Rnd-011_10C4C929.wem		\Actor-Mixer Hierarchy\Global_GameJam\Ambiance\Room_Tones\Noises\Ambiance_Noise_Rnd-011		456608
+	782565322	Door_Open_A-001	D:\Enjmin\Projets\GlobalGame Jam\Repo_Wwise\Global_GameJam\.cache\Windows\SFX\Door_Open_A-001_10C4C929.wem		\Actor-Mixer Hierarchy\Global_GameJam\Interact\Door\DoorA\Open\Door_Open_A-001		133290
+	787231623	Footsteps_Run_Carpet-008	D:\Enjmin\Projets\GlobalGame Jam\Repo_Wwise\Global_GameJam\.cache\Windows\SFX\Footsteps_Run_Carpet-008_10C4C929.wem		\Actor-Mixer Hierarchy\Global_GameJam\Character\Footsteps\Footsteps_Run\Run_Carpet\Footsteps_Run_Carpet-008		48064
+	787378958	Monster_Spotted_seq_01	D:\Enjmin\Projets\GlobalGame Jam\Repo_Wwise\Global_GameJam\.cache\Windows\SFX\Monster_Spotted_seq_0CCB8C3B.wem		\Actor-Mixer Hierarchy\Global_GameJam\Monster\Vocalizations\Screams\Spotted\Scream\Monster_Spotted_seq_01		548118
+	821403366	Monster_Idle_Rnd-003	D:\Enjmin\Projets\GlobalGame Jam\Repo_Wwise\Global_GameJam\.cache\Windows\SFX\Monster_Idle_Rnd-003_10C4C929.wem		\Actor-Mixer Hierarchy\Global_GameJam\Monster\Vocalizations\Screams\Idle\Screams_Rnd\Monster_Idle_Rnd-003		312912
+	831124897	Footsteps_Walk_Wood-005	D:\Enjmin\Projets\GlobalGame Jam\Repo_Wwise\Global_GameJam\.cache\Windows\SFX\Footsteps_Walk_Wood-005_10C4C929.wem		\Actor-Mixer Hierarchy\Global_GameJam\Character\Footsteps\Footsteps_Walk\Walk_Wood\Footsteps_Walk_Wood-005		96064
+	847963393	Room_Tone_A_04	D:\Enjmin\Projets\GlobalGame Jam\Repo_Wwise\Global_GameJam\.cache\Windows\SFX\Ambiance_lp_5CFE4900.wem		\Actor-Mixer Hierarchy\Global_GameJam\Ambiance\Room_Tones\Room_Tone_A_lp\Room_Tone_A_04		2977552
+	870344915	Heartbeats_seq	D:\Enjmin\Projets\GlobalGame Jam\Repo_Wwise\Global_GameJam\.cache\Windows\SFX\Heartbeats_seq_D79FB2B7.wem		\Actor-Mixer Hierarchy\Global_GameJam\Character\Breath\Heartbeats_seq		590574
+	928483455	Footsteps_Walk_Wood-006	D:\Enjmin\Projets\GlobalGame Jam\Repo_Wwise\Global_GameJam\.cache\Windows\SFX\Footsteps_Walk_Wood-006_10C4C929.wem		\Actor-Mixer Hierarchy\Global_GameJam\Character\Footsteps\Footsteps_Walk\Walk_Wood\Footsteps_Walk_Wood-006		96064
+	937399777	Door_Open_B-002	D:\Enjmin\Projets\GlobalGame Jam\Repo_Wwise\Global_GameJam\.cache\Windows\SFX\Door_Open_B-002_10C4C929.wem		\Actor-Mixer Hierarchy\Global_GameJam\Interact\Door\DoorB\Open\Door_Open_B-002		155232
+	947634038	Footsteps_Run_Wood-001	D:\Enjmin\Projets\GlobalGame Jam\Repo_Wwise\Global_GameJam\.cache\Windows\SFX\Footsteps_Run_Wood-001_10C4C929.wem		\Actor-Mixer Hierarchy\Global_GameJam\Character\Footsteps\Footsteps_Run\Run_Wood\Footsteps_Run_Wood-001		67264
+	966755600	Footsteps_Run_Wood-005	D:\Enjmin\Projets\GlobalGame Jam\Repo_Wwise\Global_GameJam\.cache\Windows\SFX\Footsteps_Run_Wood-005_10C4C929.wem		\Actor-Mixer Hierarchy\Global_GameJam\Character\Footsteps\Footsteps_Run\Run_Wood\Footsteps_Run_Wood-005		67264
+	977143426	Footsteps_Run_Wood-002	D:\Enjmin\Projets\GlobalGame Jam\Repo_Wwise\Global_GameJam\.cache\Windows\SFX\Footsteps_Run_Wood-002_10C4C929.wem		\Actor-Mixer Hierarchy\Global_GameJam\Character\Footsteps\Footsteps_Run\Run_Wood\Footsteps_Run_Wood-002		67264
+	982199689	Ambiance_Noise_Rnd-004	D:\Enjmin\Projets\GlobalGame Jam\Repo_Wwise\Global_GameJam\.cache\Windows\SFX\Ambiance_Noise_Rnd-004_10C4C929.wem		\Actor-Mixer Hierarchy\Global_GameJam\Ambiance\Room_Tones\Noises\Ambiance_Noise_Rnd-004		493664
+	1005644545	Ambiance_Noise_Rnd-002	D:\Enjmin\Projets\GlobalGame Jam\Repo_Wwise\Global_GameJam\.cache\Windows\SFX\Ambiance_Noise_Rnd-002_10C4C929.wem		\Actor-Mixer Hierarchy\Global_GameJam\Ambiance\Room_Tones\Noises\Ambiance_Noise_Rnd-002		669852
+	1010912651	Footsteps_Run_Carpet-005	D:\Enjmin\Projets\GlobalGame Jam\Repo_Wwise\Global_GameJam\.cache\Windows\SFX\Footsteps_Run_Carpet-005_10C4C929.wem		\Actor-Mixer Hierarchy\Global_GameJam\Character\Footsteps\Footsteps_Run\Run_Carpet\Footsteps_Run_Carpet-005		48064
+	1021283366	Footsteps_Run_Wood-003	D:\Enjmin\Projets\GlobalGame Jam\Repo_Wwise\Global_GameJam\.cache\Windows\SFX\Footsteps_Run_Wood-003_10C4C929.wem		\Actor-Mixer Hierarchy\Global_GameJam\Character\Footsteps\Footsteps_Run\Run_Wood\Footsteps_Run_Wood-003		67264
+	1033359660	Door_Close_B-001	D:\Enjmin\Projets\GlobalGame Jam\Repo_Wwise\Global_GameJam\.cache\Windows\SFX\Door_Close_B-001_10C4C929.wem		\Actor-Mixer Hierarchy\Global_GameJam\Interact\Door\DoorB\Close\Door_Close_B-001		224230
+	1044165385	Footsteps_Walk_Wood-002	D:\Enjmin\Projets\GlobalGame Jam\Repo_Wwise\Global_GameJam\.cache\Windows\SFX\Footsteps_Walk_Wood-002_10C4C929.wem		\Actor-Mixer Hierarchy\Global_GameJam\Character\Footsteps\Footsteps_Walk\Walk_Wood\Footsteps_Walk_Wood-002		96064
+	1052375836	Ambiance_Noise_Rnd-001	D:\Enjmin\Projets\GlobalGame Jam\Repo_Wwise\Global_GameJam\.cache\Windows\SFX\Ambiance_Noise_Rnd-001_10C4C929.wem		\Actor-Mixer Hierarchy\Global_GameJam\Ambiance\Room_Tones\Noises\Ambiance_Noise_Rnd-001		645964
+	1065691374	Footsteps_Walk_Wood-008	D:\Enjmin\Projets\GlobalGame Jam\Repo_Wwise\Global_GameJam\.cache\Windows\SFX\Footsteps_Walk_Wood-008_10C4C929.wem		\Actor-Mixer Hierarchy\Global_GameJam\Character\Footsteps\Footsteps_Walk\Walk_Wood\Footsteps_Walk_Wood-008		96064
+

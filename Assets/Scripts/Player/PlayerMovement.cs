@@ -18,7 +18,7 @@ public class PlayerMovement : MonoBehaviour
     public float gravity = -9.81f;
 
     private bool isGrounded;
-    private float currentSpeed;
+    public float currentSpeed;
 
     Vector3 velocity;
 

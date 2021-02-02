@@ -1,0 +1,37 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	1069431850	Player			\Default Work Unit\Player	
+	4229160191	Player_Eyes			\Default Work Unit\Player_Eyes	
+
+State	ID	Name	State Group			Notes
+	748895195	None	Player			
+	1874288895	Idle	Player			
+	3214304800	Spotted	Player			
+	748895195	None	Player_Eyes			
+	3012222945	Closed	Player_Eyes			
+
+Custom State	ID	Name	State Group	Owner		Notes
+	394820456	Closed	Player_Eyes	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX\Player		
+	815442485	Closed	Player_Eyes	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus		
+
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	393239870	SFX			\Default Work Unit\Master Audio Bus\SFX	
+	1069431850	Player			\Default Work Unit\Master Audio Bus\SFX\Player	
+	1466384055	Interact			\Default Work Unit\Master Audio Bus\SFX\Interact	
+	2376328173	Monster			\Default Work Unit\Master Audio Bus\SFX\Monster	
+	2981377429	Ambiance			\Default Work Unit\Master Audio Bus\Ambiance	
+	3545700988	Reverbs			\Default Work Unit\Master Audio Bus\Reverbs	
+	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+	3991942870	Music			\Default Work Unit\Master Audio Bus\Music	
+
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	3055128616	Medium_Verb			\Default Work Unit\Master Audio Bus\Reverbs\Medium_Verb	
+	3252130918	Small_Verb			\Default Work Unit\Master Audio Bus\Reverbs\Small_Verb	
+
+Effect plug-ins	ID	Name	Type				Notes
+	1990128658	Room_Medium	Wwise RoomVerb			
+	2995775460	Room_Small	Wwise RoomVerb			
+
+Audio Devices	ID	Name	Type				Notes
+	2317455096	No_Output	No Output			
+	3859886410	System	System			
+

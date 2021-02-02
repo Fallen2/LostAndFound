@@ -1,0 +1,62 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "12",
+  "SoundbankVersion": "135",
+  "RootPaths": {
+   "ProjectRoot": "D:\\Enjmin\\Projets\\GlobalGame Jam\\Repo_Wwise\\Global_GameJam\\",
+   "SourceFilesRoot": "D:\\Enjmin\\Projets\\GlobalGame Jam\\Repo_Wwise\\Global_GameJam\\.cache\\Windows\\",
+   "SoundBanksRoot": "D:\\Enjmin\\Projets\\GlobalGame Jam\\Repo_Unity\\LostAndFound\\Assets\\StreamingAssets\\Audio\\GeneratedSoundBanks\\Windows\\",
+   "ExternalSourcesInputFile": "",
+   "ExternalSourcesOutputRoot": "D:\\Enjmin\\Projets\\GlobalGame Jam\\Repo_Wwise\\Global_GameJam\\GeneratedSoundBanks\\Windows"
+  },
+  "SoundBanks": [
+   {
+    "Id": "1355168291",
+    "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
+    "Language": "SFX",
+    "Hash": "4024178716",
+    "ObjectPath": "Init",
+    "ShortName": "Init",
+    "Path": "Init.bnk",
+    "IncludedAuxBusses": [
+     {
+      "Id": "3055128616",
+      "Name": "Medium_Verb",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Reverbs\\Medium_Verb",
+      "GUID": "{018CE0FB-4330-46A6-93F7-BBEC2A53E97C}"
+     },
+     {
+      "Id": "3252130918",
+      "Name": "Small_Verb",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Reverbs\\Small_Verb",
+      "GUID": "{5A65E0C4-892A-4542-AB62-651E2EFB6D60}"
+     }
+    ],
+    "StateGroups": [
+     {
+      "Id": "4229160191",
+      "Name": "Player_Eyes",
+      "ObjectPath": "\\States\\Default Work Unit\\Player_Eyes",
+      "GUID": "{965DBA80-F984-4580-9AF4-19886B5BEB94}",
+      "States": [
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\Player_Eyes\\None",
+        "GUID": "{C11004E3-104B-436F-B62E-86C4696583EF}"
+       },
+       {
+        "Id": "3012222945",
+        "Name": "Closed",
+        "ObjectPath": "\\States\\Default Work Unit\\Player_Eyes\\Closed",
+        "GUID": "{B217163A-89F2-4452-A438-46BD7BF6F2CB}"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}

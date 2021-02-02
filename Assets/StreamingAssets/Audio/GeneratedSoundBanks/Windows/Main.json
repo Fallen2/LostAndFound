@@ -1,0 +1,735 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "12",
+  "SoundbankVersion": "135",
+  "RootPaths": {
+   "ProjectRoot": "D:\\Enjmin\\Projets\\GlobalGame Jam\\Repo_Wwise\\Global_GameJam\\",
+   "SourceFilesRoot": "D:\\Enjmin\\Projets\\GlobalGame Jam\\Repo_Wwise\\Global_GameJam\\.cache\\Windows\\",
+   "SoundBanksRoot": "D:\\Enjmin\\Projets\\GlobalGame Jam\\Repo_Unity\\LostAndFound\\Assets\\StreamingAssets\\Audio\\GeneratedSoundBanks\\Windows\\",
+   "ExternalSourcesInputFile": "",
+   "ExternalSourcesOutputRoot": "D:\\Enjmin\\Projets\\GlobalGame Jam\\Repo_Wwise\\Global_GameJam\\GeneratedSoundBanks\\Windows"
+  },
+  "SoundBanks": [
+   {
+    "Id": "3161908922",
+    "GUID": "{2CA95D48-8704-40A8-BD4A-0D327D53ED63}",
+    "Language": "SFX",
+    "Hash": "3497356718",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
+    "ShortName": "Main",
+    "Path": "Main.bnk",
+    "IncludedEvents": [
+     {
+      "Id": "3698047240",
+      "Name": "Play_Breath",
+      "ObjectPath": "\\Events\\Default Work Unit\\Character\\Play_Breath",
+      "GUID": "{AACC0FF6-3066-467A-B384-BB6F16787C7A}",
+      "DurationType": "Infinite",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "103220578",
+        "Language": "SFX",
+        "ShortName": "Breath_Idle_lp.wav",
+        "Path": "SFX\\Breath_Idle_lp_D79FB2B7.wem"
+       },
+       {
+        "Id": "261017651",
+        "Language": "SFX",
+        "ShortName": "Breath_Stress_lp.wav",
+        "Path": "SFX\\Breath_Stress_lp_43B40C3C.wem"
+       },
+       {
+        "Id": "870344915",
+        "Language": "SFX",
+        "ShortName": "Heartbeats_seq.wav",
+        "Path": "SFX\\Heartbeats_seq_D79FB2B7.wem"
+       }
+      ]
+     },
+     {
+      "Id": "2547633870",
+      "Name": "Play_Door",
+      "ObjectPath": "\\Events\\Default Work Unit\\Interact\\Play_Door",
+      "GUID": "{91591A7A-8A7B-4679-A747-A12C6B6D3B31}",
+      "MaxAttenuation": "1000.000000",
+      "DurationType": "OneShot",
+      "DurationMin": "1.387771",
+      "DurationMax": "2.461833",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "25758876",
+        "Language": "SFX",
+        "ShortName": "Door_Close_B-002.wav",
+        "Path": "SFX\\Door_Close_B-002_10C4C929.wem"
+       },
+       {
+        "Id": "85314224",
+        "Language": "SFX",
+        "ShortName": "Door_Close_A-002.wav",
+        "Path": "SFX\\Door_Close_A-002_10C4C929.wem"
+       },
+       {
+        "Id": "277813619",
+        "Language": "SFX",
+        "ShortName": "Door_Open_B-001.wav",
+        "Path": "SFX\\Door_Open_B-001_10C4C929.wem"
+       },
+       {
+        "Id": "292745118",
+        "Language": "SFX",
+        "ShortName": "Door_Close_A-001.wav",
+        "Path": "SFX\\Door_Close_A-001_10C4C929.wem"
+       },
+       {
+        "Id": "755982431",
+        "Language": "SFX",
+        "ShortName": "Door_Open_A-002.wav",
+        "Path": "SFX\\Door_Open_A-002_10C4C929.wem"
+       },
+       {
+        "Id": "782565322",
+        "Language": "SFX",
+        "ShortName": "Door_Open_A-001.wav",
+        "Path": "SFX\\Door_Open_A-001_10C4C929.wem"
+       },
+       {
+        "Id": "937399777",
+        "Language": "SFX",
+        "ShortName": "Door_Open_B-002.wav",
+        "Path": "SFX\\Door_Open_B-002_10C4C929.wem"
+       },
+       {
+        "Id": "1033359660",
+        "Language": "SFX",
+        "ShortName": "Door_Close_B-001.wav",
+        "Path": "SFX\\Door_Close_B-001_10C4C929.wem"
+       }
+      ],
+      "DefaultSwitchValue": "{490AEC2E-636F-4AAF-BBE7-D38ABBFEDDB1}",
+      "SwitchContainers": [
+       {
+        "SwitchValue": "{0501131F-0815-483F-AD0F-57397658BDFD}",
+        "Media": [
+         {
+          "Id": "292745118"
+         },
+         {
+          "Id": "85314224"
+         }
+        ]
+       },
+       {
+        "SwitchValue": "{490AEC2E-636F-4AAF-BBE7-D38ABBFEDDB1}",
+        "Media": [
+         {
+          "Id": "782565322"
+         },
+         {
+          "Id": "755982431"
+         }
+        ]
+       },
+       {
+        "SwitchValue": "{490AEC2E-636F-4AAF-BBE7-D38ABBFEDDB1}",
+        "Media": [
+         {
+          "Id": "277813619"
+         },
+         {
+          "Id": "937399777"
+         }
+        ]
+       },
+       {
+        "SwitchValue": "{0501131F-0815-483F-AD0F-57397658BDFD}",
+        "Media": [
+         {
+          "Id": "1033359660"
+         },
+         {
+          "Id": "25758876"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "Id": "2983625421",
+      "Name": "Play_Footsteps_Run",
+      "ObjectPath": "\\Events\\Default Work Unit\\Character\\Play_Footsteps_Run",
+      "GUID": "{08825D3D-1EA4-4C3B-9015-D84D39CE2663}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.500000",
+      "DurationMax": "0.700000",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "118978957",
+        "Language": "SFX",
+        "ShortName": "Footsteps_Run_Carpet-006.wav",
+        "Path": "SFX\\Footsteps_Run_Carpet-006_10C4C929.wem"
+       },
+       {
+        "Id": "252897411",
+        "Language": "SFX",
+        "ShortName": "Footsteps_Run_Carpet-004.wav",
+        "Path": "SFX\\Footsteps_Run_Carpet-004_10C4C929.wem"
+       },
+       {
+        "Id": "356322556",
+        "Language": "SFX",
+        "ShortName": "Footsteps_Run_Wood-008.wav",
+        "Path": "SFX\\Footsteps_Run_Wood-008_10C4C929.wem"
+       },
+       {
+        "Id": "421334643",
+        "Language": "SFX",
+        "ShortName": "Footsteps_Run_Carpet-001.wav",
+        "Path": "SFX\\Footsteps_Run_Carpet-001_10C4C929.wem"
+       },
+       {
+        "Id": "541802290",
+        "Language": "SFX",
+        "ShortName": "Footsteps_Run_Carpet-002.wav",
+        "Path": "SFX\\Footsteps_Run_Carpet-002_10C4C929.wem"
+       },
+       {
+        "Id": "585264217",
+        "Language": "SFX",
+        "ShortName": "Footsteps_Run_Carpet-007.wav",
+        "Path": "SFX\\Footsteps_Run_Carpet-007_10C4C929.wem"
+       },
+       {
+        "Id": "602975569",
+        "Language": "SFX",
+        "ShortName": "Footsteps_Run_Wood-007.wav",
+        "Path": "SFX\\Footsteps_Run_Wood-007_10C4C929.wem"
+       },
+       {
+        "Id": "677740306",
+        "Language": "SFX",
+        "ShortName": "Footsteps_Run_Wood-004.wav",
+        "Path": "SFX\\Footsteps_Run_Wood-004_10C4C929.wem"
+       },
+       {
+        "Id": "732469468",
+        "Language": "SFX",
+        "ShortName": "Footsteps_Run_Carpet-003.wav",
+        "Path": "SFX\\Footsteps_Run_Carpet-003_10C4C929.wem"
+       },
+       {
+        "Id": "750573075",
+        "Language": "SFX",
+        "ShortName": "Footsteps_Run_Wood-006.wav",
+        "Path": "SFX\\Footsteps_Run_Wood-006_10C4C929.wem"
+       },
+       {
+        "Id": "787231623",
+        "Language": "SFX",
+        "ShortName": "Footsteps_Run_Carpet-008.wav",
+        "Path": "SFX\\Footsteps_Run_Carpet-008_10C4C929.wem"
+       },
+       {
+        "Id": "947634038",
+        "Language": "SFX",
+        "ShortName": "Footsteps_Run_Wood-001.wav",
+        "Path": "SFX\\Footsteps_Run_Wood-001_10C4C929.wem"
+       },
+       {
+        "Id": "966755600",
+        "Language": "SFX",
+        "ShortName": "Footsteps_Run_Wood-005.wav",
+        "Path": "SFX\\Footsteps_Run_Wood-005_10C4C929.wem"
+       },
+       {
+        "Id": "977143426",
+        "Language": "SFX",
+        "ShortName": "Footsteps_Run_Wood-002.wav",
+        "Path": "SFX\\Footsteps_Run_Wood-002_10C4C929.wem"
+       },
+       {
+        "Id": "1010912651",
+        "Language": "SFX",
+        "ShortName": "Footsteps_Run_Carpet-005.wav",
+        "Path": "SFX\\Footsteps_Run_Carpet-005_10C4C929.wem"
+       },
+       {
+        "Id": "1021283366",
+        "Language": "SFX",
+        "ShortName": "Footsteps_Run_Wood-003.wav",
+        "Path": "SFX\\Footsteps_Run_Wood-003_10C4C929.wem"
+       }
+      ],
+      "DefaultSwitchValue": "{8A6714FD-0501-468D-A897-1D453C4BC5D2}",
+      "SwitchContainers": [
+       {
+        "SwitchValue": "{67A41A58-B080-4D17-98EE-7A7AF0F72506}",
+        "Media": [
+         {
+          "Id": "421334643"
+         },
+         {
+          "Id": "541802290"
+         },
+         {
+          "Id": "732469468"
+         },
+         {
+          "Id": "252897411"
+         },
+         {
+          "Id": "1010912651"
+         },
+         {
+          "Id": "118978957"
+         },
+         {
+          "Id": "585264217"
+         },
+         {
+          "Id": "787231623"
+         }
+        ]
+       },
+       {
+        "SwitchValue": "{8A6714FD-0501-468D-A897-1D453C4BC5D2}",
+        "Media": [
+         {
+          "Id": "947634038"
+         },
+         {
+          "Id": "977143426"
+         },
+         {
+          "Id": "1021283366"
+         },
+         {
+          "Id": "677740306"
+         },
+         {
+          "Id": "966755600"
+         },
+         {
+          "Id": "750573075"
+         },
+         {
+          "Id": "602975569"
+         },
+         {
+          "Id": "356322556"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "Id": "2618673757",
+      "Name": "Play_Footsteps_Walk",
+      "ObjectPath": "\\Events\\Default Work Unit\\Character\\Play_Footsteps_Walk",
+      "GUID": "{F7EDD5FE-8426-4294-9D45-8FF04A3FB34A}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.000000",
+      "DurationMax": "1.000000",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "8552677",
+        "Language": "SFX",
+        "ShortName": "Footsteps_Walk_Wood-001.wav",
+        "Path": "SFX\\Footsteps_Walk_Wood-001_10C4C929.wem"
+       },
+       {
+        "Id": "9620038",
+        "Language": "SFX",
+        "ShortName": "Footsteps_Walk_Wood-007.wav",
+        "Path": "SFX\\Footsteps_Walk_Wood-007_10C4C929.wem"
+       },
+       {
+        "Id": "49869655",
+        "Language": "SFX",
+        "ShortName": "Footsteps_Walk_Carpet-002.wav",
+        "Path": "SFX\\Footsteps_Walk_Carpet-002_10C4C929.wem"
+       },
+       {
+        "Id": "49964382",
+        "Language": "SFX",
+        "ShortName": "Footsteps_Walk_Wood-003.wav",
+        "Path": "SFX\\Footsteps_Walk_Wood-003_10C4C929.wem"
+       },
+       {
+        "Id": "156516463",
+        "Language": "SFX",
+        "ShortName": "Footsteps_Walk_Carpet-008.wav",
+        "Path": "SFX\\Footsteps_Walk_Carpet-008_10C4C929.wem"
+       },
+       {
+        "Id": "174440118",
+        "Language": "SFX",
+        "ShortName": "Footsteps_Walk_Carpet-007.wav",
+        "Path": "SFX\\Footsteps_Walk_Carpet-007_10C4C929.wem"
+       },
+       {
+        "Id": "460632793",
+        "Language": "SFX",
+        "ShortName": "Footsteps_Walk_Carpet-001.wav",
+        "Path": "SFX\\Footsteps_Walk_Carpet-001_10C4C929.wem"
+       },
+       {
+        "Id": "510763140",
+        "Language": "SFX",
+        "ShortName": "Footsteps_Walk_Carpet-006.wav",
+        "Path": "SFX\\Footsteps_Walk_Carpet-006_10C4C929.wem"
+       },
+       {
+        "Id": "529174030",
+        "Language": "SFX",
+        "ShortName": "Footsteps_Walk_Wood-004.wav",
+        "Path": "SFX\\Footsteps_Walk_Wood-004_10C4C929.wem"
+       },
+       {
+        "Id": "636029296",
+        "Language": "SFX",
+        "ShortName": "Footsteps_Walk_Carpet-005.wav",
+        "Path": "SFX\\Footsteps_Walk_Carpet-005_10C4C929.wem"
+       },
+       {
+        "Id": "654907565",
+        "Language": "SFX",
+        "ShortName": "Footsteps_Walk_Carpet-003.wav",
+        "Path": "SFX\\Footsteps_Walk_Carpet-003_10C4C929.wem"
+       },
+       {
+        "Id": "669464405",
+        "Language": "SFX",
+        "ShortName": "Footsteps_Walk_Carpet-004.wav",
+        "Path": "SFX\\Footsteps_Walk_Carpet-004_10C4C929.wem"
+       },
+       {
+        "Id": "831124897",
+        "Language": "SFX",
+        "ShortName": "Footsteps_Walk_Wood-005.wav",
+        "Path": "SFX\\Footsteps_Walk_Wood-005_10C4C929.wem"
+       },
+       {
+        "Id": "928483455",
+        "Language": "SFX",
+        "ShortName": "Footsteps_Walk_Wood-006.wav",
+        "Path": "SFX\\Footsteps_Walk_Wood-006_10C4C929.wem"
+       },
+       {
+        "Id": "1044165385",
+        "Language": "SFX",
+        "ShortName": "Footsteps_Walk_Wood-002.wav",
+        "Path": "SFX\\Footsteps_Walk_Wood-002_10C4C929.wem"
+       },
+       {
+        "Id": "1065691374",
+        "Language": "SFX",
+        "ShortName": "Footsteps_Walk_Wood-008.wav",
+        "Path": "SFX\\Footsteps_Walk_Wood-008_10C4C929.wem"
+       }
+      ],
+      "DefaultSwitchValue": "{8A6714FD-0501-468D-A897-1D453C4BC5D2}",
+      "SwitchContainers": [
+       {
+        "SwitchValue": "{67A41A58-B080-4D17-98EE-7A7AF0F72506}",
+        "Media": [
+         {
+          "Id": "460632793"
+         },
+         {
+          "Id": "49869655"
+         },
+         {
+          "Id": "654907565"
+         },
+         {
+          "Id": "669464405"
+         },
+         {
+          "Id": "636029296"
+         },
+         {
+          "Id": "510763140"
+         },
+         {
+          "Id": "174440118"
+         },
+         {
+          "Id": "156516463"
+         }
+        ]
+       },
+       {
+        "SwitchValue": "{8A6714FD-0501-468D-A897-1D453C4BC5D2}",
+        "Media": [
+         {
+          "Id": "8552677"
+         },
+         {
+          "Id": "1044165385"
+         },
+         {
+          "Id": "49964382"
+         },
+         {
+          "Id": "529174030"
+         },
+         {
+          "Id": "831124897"
+         },
+         {
+          "Id": "928483455"
+         },
+         {
+          "Id": "9620038"
+         },
+         {
+          "Id": "1065691374"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "Id": "1501818189",
+      "Name": "Play_Room_Tones",
+      "ObjectPath": "\\Events\\Default Work Unit\\Ambiance\\Play_Room_Tones",
+      "GUID": "{A8169178-B60B-4150-B166-04C4405C3392}",
+      "DurationType": "Infinite",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "2627760",
+        "Language": "SFX",
+        "ShortName": "Ambiance_lp.wav",
+        "Path": "SFX\\Ambiance_lp_6D419472.wem"
+       },
+       {
+        "Id": "339511823",
+        "Language": "SFX",
+        "ShortName": "Ambiance_lp.wav",
+        "Path": "SFX\\Ambiance_lp_ECED9E55.wem"
+       },
+       {
+        "Id": "381611552",
+        "Language": "SFX",
+        "ShortName": "Ambiance_Noise_Rnd-006.wav",
+        "Path": "SFX\\Ambiance_Noise_Rnd-006_10C4C929.wem"
+       },
+       {
+        "Id": "478997197",
+        "Language": "SFX",
+        "ShortName": "Ambiance_Noise_Rnd-008.wav",
+        "Path": "SFX\\Ambiance_Noise_Rnd-008_10C4C929.wem"
+       },
+       {
+        "Id": "508078762",
+        "Language": "SFX",
+        "ShortName": "Ambiance_Noise_Rnd-013.wav",
+        "Path": "SFX\\Ambiance_Noise_Rnd-013_10C4C929.wem"
+       },
+       {
+        "Id": "510792981",
+        "Language": "SFX",
+        "ShortName": "Ambiance_Noise_Rnd-003.wav",
+        "Path": "SFX\\Ambiance_Noise_Rnd-003_10C4C929.wem"
+       },
+       {
+        "Id": "514792566",
+        "Language": "SFX",
+        "ShortName": "Ambiance_Noise_Rnd-007.wav",
+        "Path": "SFX\\Ambiance_Noise_Rnd-007_10C4C929.wem"
+       },
+       {
+        "Id": "573394928",
+        "Language": "SFX",
+        "ShortName": "Ambiance_Noise_Rnd-012.wav",
+        "Path": "SFX\\Ambiance_Noise_Rnd-012_10C4C929.wem"
+       },
+       {
+        "Id": "573406383",
+        "Language": "SFX",
+        "ShortName": "Ambiance_Noise_Rnd-009.wav",
+        "Path": "SFX\\Ambiance_Noise_Rnd-009_10C4C929.wem"
+       },
+       {
+        "Id": "610153961",
+        "Language": "SFX",
+        "ShortName": "Ambiance_lp.wav",
+        "Path": "SFX\\Ambiance_lp_96672C1F.wem"
+       },
+       {
+        "Id": "612764574",
+        "Language": "SFX",
+        "ShortName": "Ambiance_Noise_Rnd-005.wav",
+        "Path": "SFX\\Ambiance_Noise_Rnd-005_10C4C929.wem"
+       },
+       {
+        "Id": "675517028",
+        "Language": "SFX",
+        "ShortName": "Ambiance_Noise_Rnd-014.wav",
+        "Path": "SFX\\Ambiance_Noise_Rnd-014_10C4C929.wem"
+       },
+       {
+        "Id": "756749257",
+        "Language": "SFX",
+        "ShortName": "Ambiance_lp.wav",
+        "Path": "SFX\\Ambiance_lp_0C07911E.wem"
+       },
+       {
+        "Id": "779924430",
+        "Language": "SFX",
+        "ShortName": "Ambiance_Noise_Rnd-011.wav",
+        "Path": "SFX\\Ambiance_Noise_Rnd-011_10C4C929.wem"
+       },
+       {
+        "Id": "847963393",
+        "Language": "SFX",
+        "ShortName": "Ambiance_lp.wav",
+        "Path": "SFX\\Ambiance_lp_5CFE4900.wem"
+       },
+       {
+        "Id": "982199689",
+        "Language": "SFX",
+        "ShortName": "Ambiance_Noise_Rnd-004.wav",
+        "Path": "SFX\\Ambiance_Noise_Rnd-004_10C4C929.wem"
+       },
+       {
+        "Id": "1005644545",
+        "Language": "SFX",
+        "ShortName": "Ambiance_Noise_Rnd-002.wav",
+        "Path": "SFX\\Ambiance_Noise_Rnd-002_10C4C929.wem"
+       },
+       {
+        "Id": "1052375836",
+        "Language": "SFX",
+        "ShortName": "Ambiance_Noise_Rnd-001.wav",
+        "Path": "SFX\\Ambiance_Noise_Rnd-001_10C4C929.wem"
+       }
+      ]
+     },
+     {
+      "Id": "2700195184",
+      "Name": "Play_Screams",
+      "ObjectPath": "\\Events\\Default Work Unit\\Monster\\Play_Screams",
+      "GUID": "{BDC4F99B-A1DD-4BFF-BFEF-4666DA88D7E0}",
+      "MaxAttenuation": "1000.000000",
+      "DurationType": "Infinite",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "23883776",
+        "Language": "SFX",
+        "ShortName": "Monster_Idle_Tone.wav",
+        "Path": "SFX\\Monster_Idle_Tone_A98017A4.wem"
+       },
+       {
+        "Id": "28183169",
+        "Language": "SFX",
+        "ShortName": "Monster_Idle_Rnd-004.wav",
+        "Path": "SFX\\Monster_Idle_Rnd-004_10C4C929.wem"
+       },
+       {
+        "Id": "210931364",
+        "Language": "SFX",
+        "ShortName": "Monster_Idle_Tone.wav",
+        "Path": "SFX\\Monster_Idle_Tone_695C4FC8.wem"
+       },
+       {
+        "Id": "234849400",
+        "Language": "SFX",
+        "ShortName": "Monster_Idle_Tone.wav",
+        "Path": "SFX\\Monster_Idle_Tone_616FD066.wem"
+       },
+       {
+        "Id": "527323468",
+        "Language": "SFX",
+        "ShortName": "Monster_Idle_Rnd-001.wav",
+        "Path": "SFX\\Monster_Idle_Rnd-001_10C4C929.wem"
+       },
+       {
+        "Id": "688439534",
+        "Language": "SFX",
+        "ShortName": "Monster_Spotted_seq.wav",
+        "Path": "SFX\\Monster_Spotted_seq_A3136DA4.wem"
+       },
+       {
+        "Id": "758652609",
+        "Language": "SFX",
+        "ShortName": "Monster_Idle_Rnd-002.wav",
+        "Path": "SFX\\Monster_Idle_Rnd-002_10C4C929.wem"
+       },
+       {
+        "Id": "787378958",
+        "Language": "SFX",
+        "ShortName": "Monster_Spotted_seq.wav",
+        "Path": "SFX\\Monster_Spotted_seq_0CCB8C3B.wem"
+       },
+       {
+        "Id": "821403366",
+        "Language": "SFX",
+        "ShortName": "Monster_Idle_Rnd-003.wav",
+        "Path": "SFX\\Monster_Idle_Rnd-003_10C4C929.wem"
+       }
+      ]
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "1062779386",
+      "Name": "Player_Speed",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Player_Speed",
+      "GUID": "{822F5DC5-0208-4071-AB93-354DFFEDF9CD}"
+     },
+     {
+      "Id": "1289058627",
+      "Name": "Stress_Intensity",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Stress_Intensity",
+      "GUID": "{07B8D448-0F39-4707-8EFC-ED92FE347184}"
+     }
+    ],
+    "SwitchGroups": [
+     {
+      "Id": "1877847629",
+      "Name": "Door",
+      "ObjectPath": "\\Switches\\Default Work Unit\\Door",
+      "GUID": "{DA167FC7-51AD-4E5E-B25D-D14CB592F98C}",
+      "Switches": [
+       {
+        "Id": "3072142513",
+        "Name": "Open",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Door\\Open",
+        "GUID": "{490AEC2E-636F-4AAF-BBE7-D38ABBFEDDB1}"
+       },
+       {
+        "Id": "1451272583",
+        "Name": "Close",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Door\\Close",
+        "GUID": "{0501131F-0815-483F-AD0F-57397658BDFD}"
+       }
+      ]
+     },
+     {
+      "Id": "1880793925",
+      "Name": "Floor_Texture",
+      "ObjectPath": "\\Switches\\Default Work Unit\\Floor_Texture",
+      "GUID": "{9E9D18D7-8B7D-4421-808C-615580A0D58C}",
+      "Switches": [
+       {
+        "Id": "2412606308",
+        "Name": "Carpet",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Floor_Texture\\Carpet",
+        "GUID": "{67A41A58-B080-4D17-98EE-7A7AF0F72506}"
+       },
+       {
+        "Id": "2058049674",
+        "Name": "Wood",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Floor_Texture\\Wood",
+        "GUID": "{8A6714FD-0501-468D-A897-1D453C4BC5D2}"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}

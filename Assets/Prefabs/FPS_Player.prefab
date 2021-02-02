@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4248015024396759114}
   - component: {fileID: 2969126712687528725}
+  - component: {fileID: 406502873}
   m_Layer: 0
   m_Name: FPS_Player
   m_TagString: Untagged
@@ -52,6 +53,47 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &406502873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4248015024396759477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7f18e8a60b0ce44ebaf3b5193c1961e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentTerrain: 0
+  footstepsEvent_walk:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 522359169c1bc4343a9449afc3f5b141,
+      type: 2}
+  footstepsEvent_run:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 8c757a07f4f9efc448fde07b28360219,
+      type: 2}
+  groundSwitch:
+  - idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 94b0f4f280e39fc41bc8daa502fde468,
+      type: 2}
+  - idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: ddb098efef01d164692ddd6aa207c67e,
+      type: 2}
+  playerSpeed:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: a34272e6e9fbda541b44f75e8d0b3c49,
+      type: 2}
 --- !u!1001 &4248015024568225983
 PrefabInstance:
   m_ObjectHideFlags: 0

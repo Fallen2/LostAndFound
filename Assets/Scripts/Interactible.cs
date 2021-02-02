@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class Interactible : MonoBehaviour
 {
-    public void OnTrigger()
+    public virtual void OnTrigger()
     {
-
+        Debug.Log("On trigger");
     }
 
-    public void OnUse()
+    public virtual void OnUse()
     {
 
     }

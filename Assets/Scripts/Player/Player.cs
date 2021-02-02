@@ -25,9 +25,9 @@ public class Player : MonoBehaviour
         {
             //hit objects
             //get type of interactible (Doors, Lamps, Frames and Paintings)
-            if (hit.transform.gameObject.GetComponent<Interactible>())
+            if (hit.transform.gameObject.GetComponent<Interactible>() && Input.GetMouseButtonDown(0))
             {
-                Debug.Log("Interactible");
+                hit.transform.gameObject.GetComponent<Interactible>().OnTrigger();
             }
             Debug.DrawRay(playerEyes.position, playerEyes.forward * hit.distance, Color.yellow);
         }
@@ -40,7 +40,7 @@ public class Player : MonoBehaviour
 
     public void CoverEyes()
     {
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButton(1))
         {
             eyes_covered = true;
             playerAnimator.SetBool("Cover In", true);

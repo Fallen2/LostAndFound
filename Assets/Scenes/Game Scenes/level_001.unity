@@ -3153,19 +3153,19 @@ Transform:
   - {fileID: 475692163}
   - {fileID: 308474183}
   - {fileID: 670119701}
+  - {fileID: 1087644520}
   - {fileID: 489516558}
   - {fileID: 1347181829}
   - {fileID: 941999451}
   - {fileID: 1854767763}
   - {fileID: 1688695407}
+  - {fileID: 1131522688}
   - {fileID: 870383246}
   - {fileID: 1985551766}
-  - {fileID: 1087644520}
   - {fileID: 148702803}
-  - {fileID: 1131522688}
   - {fileID: 750668460}
-  - {fileID: 1152426870}
   - {fileID: 1353662394}
+  - {fileID: 1152426870}
   - {fileID: 1961094273}
   - {fileID: 2082545193}
   m_Father: {fileID: 1026670888}
@@ -14714,6 +14714,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2350019916259994367, guid: 34e7edba7f8a04142963edc10e1e0e2f,
+        type: 3}
+      propertyPath: headBobSmoothing
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2350019916259994367, guid: 34e7edba7f8a04142963edc10e1e0e2f,
+        type: 3}
+      propertyPath: bobFrequency
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 2666857281065140485, guid: 34e7edba7f8a04142963edc10e1e0e2f,
         type: 3}
       propertyPath: m_IsActive
@@ -14783,6 +14793,11 @@ PrefabInstance:
         type: 3}
       propertyPath: mouseSensitivity
       value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 7065921543158994394, guid: 34e7edba7f8a04142963edc10e1e0e2f,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 34e7edba7f8a04142963edc10e1e0e2f, type: 3}
